@@ -1,0 +1,52 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: monospace;
+}
+
+body{
+    min-height: 100svh;
+    position: relative;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+fieldset, .clrBtn{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    color: rgb(246, 255, 204);
+    padding: 1rem 0.8rem;
+    border-radius: 15px;
+    opacity: .8;
+    background-color: rgb(160, 146, 252);
+    border: none;
+}
+
+fieldset p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.clrBtn{
+    transition: transform .4s ease;
+}
+
+.clrBtn:active{
+    transform: scale(0.6);
+}
